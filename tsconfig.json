@@ -6,14 +6,16 @@
     "skipLibCheck": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist"
   },
-  "exclude": ["node_modules", ".yarn"],
+  "exclude": ["node_modules", ".yarn", "src/__tests__/"],
   "include": ["**/*.ts", "**/*.tsx"]
 }
